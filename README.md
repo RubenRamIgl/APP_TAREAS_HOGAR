@@ -1,1 +1,52 @@
-# APP_TAREAS_HOGAR
+# APP TAREAS HOGAR
+
+## 📌 Idea de la Aplicación
+La aplicación consiste en un programa que administrará tareas del hogar asignándolas a usuarios registrados. 
+
+### 🔹 Funcionalidades principales:
+- **Registro y gestión de usuarios.**
+- **Creación de tareas** con título y descripción.
+- **Asignación de tareas** a usuarios.
+- **Control de estado de las tareas** (pendiente/completada).
+- **Restricción de fecha límite** para completar las tareas.
+- **Gestión de direcciones** asociadas a los usuarios.
+
+La base de datos estará compuesta por **tres tablas**: `Usuarios`, `Tareas` y `Direcciones`.
+
+---
+
+## 🗄️ Tablas de la Base de Datos
+
+### 📌 Usuarios
+| Campo     | Tipo               | Restricciones |
+|-----------|--------------------|---------------|
+| `username`  | `VARCHAR` | `PK`, `NOT NULL`, `UNIQUE` |
+| `nombre`    | `VARCHAR` | `NOT NULL` |
+| `apellidos` | `VARCHAR` |  -  |
+| `password`  | `VARCHAR` | `Longitud: 5-20 caracteres` |
+| `email`     | `VARCHAR` | `NOT NULL`, `UNIQUE`, `Debe contener @ y terminar en .com o .es` |
+| `roles`     | `VARCHAR` | `Valores posibles: USER / ADMIN` |
+
+### 📌 Tareas
+| Campo       | Tipo       | Restricciones |
+|------------|-----------|---------------|
+| `idTarea`   | `NUMBER`  | `PK`, `Autoincremental` |
+| `nombre`    | `VARCHAR` | `NOT NULL` |
+| `descripcion` | `TEXT`  | `NOT NULL` |
+| `estado`    | `BOOLEAN` | `Por defecto: false` |
+| `fechaFin`  | `DATE`    | `No puede ser anterior a la fecha actual` |
+| `username`  | `VARCHAR` | `FK` |
+
+### 📌 Direcciones
+| Campo       | Tipo       | Restricciones |
+|------------|-----------|---------------|
+| `idDireccion` | `NUMBER`  | `PK`, `Autoincremental` |
+| `calle`    | `VARCHAR` | `NOT NULL` |
+| `numero`   | `VARCHAR` | `NOT NULL` |
+| `CP`       | `NUMBER`  |  -  |
+| `provincia`| `VARCHAR` | `NOT NULL` |
+| `municipio`| `VARCHAR` | `NOT NULL` |
+| `username` | `VARCHAR` | `FK` |
+
+---
+
