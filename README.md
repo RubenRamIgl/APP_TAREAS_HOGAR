@@ -1,15 +1,16 @@
 # APP TAREAS HOGAR
 
 ## 📌 Idea de la Aplicación
-La aplicación consiste en un programa que administrará tareas del hogar asignándolas a usuarios registrados. 
+La aplicación consiste en un programa que administrará tareas del hogar asignándolas a usuarios registrados. La función principal es dar de alta tareas con un título y descripción y el usuario podrá marcarlas como completadas siempre y cuando no haya pasado la fecha límite. 
 
 ### 🔹 Funcionalidades principales:
 - **Registro y gestión de usuarios.**
 - **Creación de tareas** con título y descripción.
 - **Asignación de tareas** a usuarios.
-- **Control de estado de las tareas** (pendiente/completada).
+- **Control de estado de las tareas** (pendiente/completada)..
 - **Restricción de fecha límite** para completar las tareas.
 - **Gestión de direcciones** asociadas a los usuarios.
+- **Borrar tareas.**
 
 La base de datos estará compuesta por **tres tablas**: `Usuarios`, `Tareas` y `Direcciones`.
 
