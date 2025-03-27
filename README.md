@@ -51,3 +51,5 @@ La base de datos estará compuesta por **tres tablas**: `Usuarios`, `Tareas` y `
 
 ---
 
+### 📌 Diagrama de la Base de Datos
+![Diagrama de Base de Datos](https://drive.google.com/file/d/1svyQRS3o8xqdSFy1lMmlhnd7BdssF7V8/view?usp=sharing)
