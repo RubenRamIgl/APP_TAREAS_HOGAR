@@ -53,3 +53,47 @@ La base de datos estará compuesta por **tres tablas**: `Usuarios`, `Tareas` y `
 
 ### 📌 Diagrama de la Base de Datos
 ![Diagrama de Base de Datos](docs/Captura_TareasHogar.png)
+
+---
+
+## 📌 Datos requeridos para las operaciones
+
+### 🔹 **Login**
+- `username`
+- `password`
+
+### 🔹 **Registro de usuario**
+- `nombre`
+- `apellido`
+- `email`
+- `password`
+- `repetirPassword`
+- `username`
+- `rol` (por defecto: `USER`)
+
+### 🔹 **Ver una tarea**
+- `nombre`
+- `descripcion`
+- `fechaFin`
+- `estado`
+- `idTarea`
+
+### 🔹 **Registrar una tarea**
+- `nombre`
+- `descripcion`
+- `fechaFin`
+
+### 🔹 **Borrar una tarea**
+- `idTarea`
+
+### 🔹 **Actualizar el estado de una tarea**
+- `idTarea`
+- `estado`
+
+### 🔹 **Registrar una tarea como admin**
+- `username` del usuario
+- `nombre` de la tarea
+- `descripcion`
+- `estado`
+
+---
